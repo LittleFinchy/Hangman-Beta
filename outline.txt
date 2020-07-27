@@ -1,0 +1,6 @@
+pick word length
+ask for hints
+show health bar?
+
+
+
