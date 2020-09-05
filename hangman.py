@@ -1,13 +1,14 @@
-import random
+from word import Word
+from guess import Guess
+from game import Game
 
-class Word:
-    pass
+temp_game = Game()
 
-class Game(Word):
-    def __init__(self,level,hints,health):
-        self.level = level
-        self.hints = hints
-        self.health = health
-        self.word = Word(self.level)
+temp_answer = 'fasefbva'
 
+hidden_word = Word(temp_answer)
 
+while temp_game.number_of_guesses > 0:
+    my_guess = Guess(input('Guess: '))
+    my_guess.check_guess(hidden_word, temp_game)
+    print('Guess '+str(temp_game.number_of_guesses))
