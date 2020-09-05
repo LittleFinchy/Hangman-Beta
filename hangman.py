@@ -4,7 +4,7 @@ from game import Game
 
 temp_game = Game()
 
-temp_answer = 'fasefbva'
+temp_answer = 'banana bread'
 
 hidden_word = Word(temp_answer)
 
